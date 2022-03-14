@@ -1,0 +1,91 @@
+.intro {
+    &__content {
+        padding-top: 82px;
+        padding-bottom: 260px;
+        position: relative;
+    }
+    &__text {
+        color: rgb(9, 4, 70);
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 1;
+        p {
+            &:first-child {
+                font-weight: 700;
+                color: #e4253f;
+                position: relative;
+            }
+        }
+    }
+    &__cap {
+        background-image: url(../img/cap.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 62px;
+        height: 46px;
+        position: absolute;
+        top: -30px;
+        right: 52.5%;
+        transform: rotate(30deg);
+        backface-visibility: hidden;
+    }
+    &__btn {
+        width: 394px;
+        height: 152px;
+        position: relative;
+        left: -40px;
+        margin-top: 20px;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/arrow.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 241px;
+            height: 370px;
+            left: -150px;
+            top: -280px;
+            pointer-events: none;
+        }
+    }
+    &__stat {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 90px 90px 0 0;
+        background-color: #090446;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        padding: 30px 40px 10px;
+        &-elem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+        &-img {
+            display: block;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 78px;
+            height: 87px;
+        }
+        &-num {
+            font-size: 60px;
+            line-height: 1.55;
+            font-weight: 700;
+        }
+        &-text {
+            max-width: 154px;
+            text-align: center;
+            color: #cfcfcf;
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+    }
+}
