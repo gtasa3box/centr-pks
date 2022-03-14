@@ -1,1 +1,9 @@
-console.log('components');
+//burger
+$('.burger').click(function(){
+    $(this).toggleClass("active");
+    $('.header__nav').toggleClass("active");
+    $('.nav__content').toggleClass("active");
+    $('.nav__back').toggleClass("active");
+    $('.grey-back').toggleClass("active");
+    $('body').toggleClass("hidden");
+});

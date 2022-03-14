@@ -6,4 +6,10 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    &_nav {
+        background-image: url(../img/logo-nav.svg);
+        &-text {
+            background-image: url(../img/logo-nav-text.svg);
+        }
+    }
 }
