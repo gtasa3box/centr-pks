@@ -1,0 +1,15 @@
+.title {
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 700;
+    &_center {
+        text-align: center;
+    }
+    &_blue {
+        color: rgb(10, 15, 52);
+    }
+    span {
+        color: rgb(228, 37, 63);
+    }
+}
