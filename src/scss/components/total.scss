@@ -5,20 +5,17 @@
         max-width: 540px;
         margin: 0 auto;
         position: relative;
-        &::before {
-            content: '';
+        .intro__cap {
             position: absolute;
-            background-image: url(../img/cap.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
             width: 85px;
             height: 63px;
             right: 80px;
+            top: initial;
             bottom: 0;
             -webkit-transform: rotate(36deg);
             -moz-transform: rotate(36deg);
             transform: rotate(36deg);
         }
     }
+
 }
