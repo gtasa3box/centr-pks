@@ -1,0 +1,109 @@
+.backcall {
+    padding-top: 100px;
+    .title {
+        max-width: 705px;
+    }
+    &__content {
+        position: relative;
+        padding-bottom: 150px;
+    }
+    &__title-info {
+        color: #090446;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin: 20px 0 40px;
+        max-width: 586px;
+        span {
+            color: rgb(228, 37, 63);
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        border-radius: 50px;
+        background-color: #ffffff;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+        max-width: 540px;
+        position: relative;
+        padding: 60px 40px;
+        color: #000;
+        font-weight: 400;
+        font-size: 16px;
+        label {
+            padding-bottom: 5px;
+        }
+        input {
+            color: #000000;
+            border: 1px solid #0a0f34;
+            background-color: #fff;
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            height: 70px;
+            margin-bottom: 10px;
+            outline: none;
+            -webkit-appearance: none;
+            line-height: 1.33;
+            width: 100%;
+            padding: 0 20px;
+        }
+        button {
+            width: 428px;
+            height: 159px;
+            position: absolute;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            bottom: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .iti {
+            margin-bottom: 10px;
+        }
+    }
+    &__img {
+        display: block;
+        background-image: url(../img/backcall/woman.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 550px;
+        width: 673px;
+        height: 898px;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/backcall/hex.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            bottom: 60px;
+            left: 130px;
+            width: 768px;
+            height: 849px;
+            z-index: -1;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/backcall/page.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 60px;
+            right: -110px;
+            width: 306px;
+            height: 383px;
+            z-index: -1;
+        }
+    }
+}
