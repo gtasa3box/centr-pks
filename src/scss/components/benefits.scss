@@ -2,6 +2,7 @@
     background-color: #090446;
     padding-top: 100px;
     padding-bottom: 60px;
+    position: relative;
     .title {
         max-width: 660px;
         margin: 0 auto;
@@ -125,5 +126,18 @@
             left: -190px;
             top: -100px;
         }
+    }
+    //img
+    &__img-page {
+        display: block;
+        position: absolute;
+        background-image: url(../img/pages.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 614px;
+        height: 623px;
+        bottom: -300px;
+        left: -150px;
     }
 }
