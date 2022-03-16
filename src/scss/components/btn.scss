@@ -40,6 +40,12 @@
                 transform: translateX(-50%) rotate(3deg);
             }
         }
+        &-qual {
+            background-image: url(../img/qualification/btn.svg);
+        }
+        &-qual2 {
+            background-image: url(../img/qualification/btn-2.svg);
+        }
     }
     &_nav {
         color: #ffffff;

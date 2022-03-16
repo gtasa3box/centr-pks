@@ -8,6 +8,11 @@ $('.burger').click(function(){
     $('body').toggleClass("hidden");
 });
 
+//hidden-block
+$('#btn-qual').click(function(){
+    $($(this).data("target")).stop().slideToggle();
+});
+
 //input-tel
 const phoneInputField = document.querySelector("#phone");
 const phoneInput = window.intlTelInput(phoneInputField, {
