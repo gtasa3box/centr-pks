@@ -27,6 +27,18 @@
         grid-row-gap: 40px;
         margin-top: 80px;
         margin-bottom: 40px;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/qualification/arrow.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: -100px;
+            top: -70px;
+            width: 75px;
+            height: 160px;
+        }
     }
     &__elem {
         height: 254px;
@@ -37,6 +49,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 50px 20px;
+        transition: 0.4s ease;
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-20px);
+        }
     }
     &__title {
         color: #ffffff;
@@ -44,12 +61,14 @@
         line-height: 1.2;
         font-weight: 500;
         text-align: center;
+        user-select: none;
     }
     &__price {
         color: #e4253f;
         font-size: 40px;
         line-height: 1.2;
         font-weight: 600;
+        user-select: none;
     }
     &__btn {
         margin: 0 auto;
