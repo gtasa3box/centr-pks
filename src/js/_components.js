@@ -31,3 +31,9 @@ document.querySelector('#phone').addEventListener('input',
 const sliderLicenses = new Carousel(document.querySelector("#slider-licenses"), {
     Dots: false,
 });
+
+//tabs
+$('.tab__title').click(function(){
+    $(this).toggleClass('active');
+    $($(this).data("target")).stop().slideToggle();
+});

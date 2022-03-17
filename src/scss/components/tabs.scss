@@ -1,0 +1,49 @@
+.tab {
+    border-top: 1px solid #eee;
+    &:last-child {
+        border-bottom: 1px solid #eee;
+    }
+    &__title {
+        display: block;
+        position: relative;
+        padding: 27px 50px 27px 0;
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 500;
+        cursor: pointer;
+        user-select: none;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            background-image: url(../img/plus.svg);
+            background-size: 24px 24px;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: 0.3s ease;
+        }
+        &:hover {
+            &:before {
+                background-color: #eee;
+            }
+        }
+        &.active {
+            &:before {
+                transform: translateY(-50%) rotate(45deg);
+            }
+        }
+    }
+    &__content {
+        font-size: 18px;
+        padding-bottom: 20px;
+        line-height: 1.55;
+        font-weight: 300;
+        display: none;
+    }
+}

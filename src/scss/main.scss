@@ -16,7 +16,8 @@
 @import "./components/grey-back";
 @import "./components/title";
 @import "./components/text-block";
-@import "./components/sliders.scss";
+@import "./components/sliders";
+@import "./components/tabs";
 
 // подключения компонентов страницы
 @import "./components/header";
@@ -29,3 +30,4 @@
 @import "./components/backcall";
 @import "./components/qualification";
 @import "./components/licenses";
+@import "./components/attestation";
