@@ -26,3 +26,8 @@ document.querySelector('#phone').addEventListener('input',
     this.value = this.value.replace(/[^\d.]/g, '');
     }
 )
+
+//licences-slider
+const sliderLicenses = new Carousel(document.querySelector("#slider-licenses"), {
+    Dots: false,
+});

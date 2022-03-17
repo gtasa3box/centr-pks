@@ -1,0 +1,21 @@
+.licenses {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    .title {
+        max-width: 700px;
+        margin: 150px auto 40px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/licenses/back.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: -500px;
+            top: -95px;
+            width: 733px;
+            height: 735px;
+        }
+    }
+}
