@@ -1,0 +1,66 @@
+<script>
+  var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene);
+  var scene1 = document.getElementById('scene1');
+  var parallaxInstance1 = new Parallax(scene1);
+  var scene3 = document.getElementById('scene3');
+  var parallaxInstance3 = new Parallax(scene3);
+</script>
+
+<!-- pre-load -->
+<script>
+  $(document).ready(function() {
+      $(window).bind('pageshow', function(event) {
+      if (event.originalEvent.persisted) {
+          $('.preloader').addClass('active'); /* window.location.reload(); */
+      }
+      });
+      // $(".site-container").attr('data-animationappear', 'off');
+      $(".site-container").css('opacity', '1');
+      $('.preloader').addClass('active');
+      $('.preloader__dot').addClass('active');
+      $('body').addClass('hidden');
+      setTimeout(function() {
+      $('.preloader').addClass('not-active');
+      $('body').removeClass('hidden');
+      }, 2000);
+  });
+  </script>
+  <script>
+  $(document).ready(function() {
+      var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+      if (isSafari) {} else {
+      $("body").append('<div class="t360__progress"><div class="t360__bar"></div></div>');
+      setTimeout(function() {
+          $(".t360__bar").addClass("t360__barprogress");
+      }, 10);
+      }
+  });
+  $(window).on('load', function() {
+      $(".t360__bar").removeClass("t360__barprogress");
+      $(".t360__bar").addClass("t360__barprogressfinished");
+      setTimeout(function() {
+      $(".t360__bar").addClass("t360__barprogresshidden");
+      }, 20);
+      setTimeout(function() {
+      $(".t360__progress").hide();
+      }, 500);
+  });
+  </script>
+    
+<div class="t360__progress" style="display: none; position: absolute; z-index: 200; top: 0; left: 0; pointer-events: none;">
+  <div class="t360__bar t360__barprogressfinished t360__barprogresshidden"></div>
+</div>
+
+<div class="preloader">
+  <div class="preloader__main">
+    <div class="preloader__hex"></div>
+    <div class="preloader__in-hex">
+      <a class="preloader__dot"></a>
+      <a class="preloader__dot preloader__dot_2"></a>
+      <a class="preloader__dot preloader__dot_3"></a>
+    </div>
+  </div>
+</div>
+
+  <!-- pre-load-end -->
