@@ -17,15 +17,17 @@
         position: relative;
     }
     &__img-back {
-        display: block;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
         position: absolute;
-        width: 405px;
-        height: 450px;
-        top: -110px;
-        left: -290px;
+        top: -110px !important;
+        left: -290px !important;
+        a {
+            display: block;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 405px;
+            height: 450px;
+        }
     }
     &__grid {
         margin-top: 60px;

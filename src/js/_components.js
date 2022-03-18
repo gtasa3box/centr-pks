@@ -52,3 +52,4 @@ $('.tab__title').click(function(){
 const sliderReviews = new Carousel(document.querySelector("#slider-reviews"), {
     Dots: false,
 });
+$('.my-paroller').paroller();
