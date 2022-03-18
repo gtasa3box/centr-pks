@@ -9,7 +9,7 @@ $('.burger').click(function(){
 });
 
 //nav-elem
-$('.nav__elem').click(function(){ 
+$('.close-nav').click(function(){ 
     $('.burger').removeClass("active");
     $('.header__nav').removeClass("active");
     $('.nav__content').removeClass("active");
@@ -32,6 +32,19 @@ const phoneInput = window.intlTelInput(phoneInputField, {
 });
 
 document.querySelector('#phone').addEventListener('input', 
+    function(e){
+    this.value = this.value.replace(/[^\d.]/g, '');
+    }
+)
+
+const phoneInputField1 = document.querySelector("#phone1");
+const phoneInput1 = window.intlTelInput(phoneInputField1, {
+    initialCountry: "ru",
+    utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+
+document.querySelector('#phone1').addEventListener('input', 
     function(e){
     this.value = this.value.replace(/[^\d.]/g, '');
     }
