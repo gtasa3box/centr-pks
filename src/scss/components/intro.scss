@@ -37,6 +37,7 @@
         font-size: 50px;
         line-height: 1;
         p {
+            display: block;
             &:first-child {
                 font-weight: 700;
                 color: #e4253f;
@@ -45,17 +46,21 @@
         }
     }
     &__cap {
-        background-image: url(../img/cap.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 62px;
-        height: 46px;
         position: absolute;
-        top: -30px;
-        right: 52.5%;
-        transform: rotate(30deg);
-        backface-visibility: hidden;
+        left: initial !important;
+        top: -30px !important;
+        right: 52.5% !important;
+        a {
+            display: block;
+            background-image: url(../img/cap.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: rotate(30deg);
+            backface-visibility: hidden;
+            width: 62px;
+            height: 46px;
+        }
     }
     &__btn {
         width: 394px;
