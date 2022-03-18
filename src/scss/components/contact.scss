@@ -23,6 +23,13 @@
             left: -31px;
             transform: translateY(-50%);
         }
+        &_foot {
+            color: white;
+            font-size: 16px;
+            &:before {
+                filter: brightness(0) invert(1);
+            }
+        }
     }
     &__number-ban {
         color: #ffffff;

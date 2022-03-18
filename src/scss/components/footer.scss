@@ -1,0 +1,74 @@
+.footer {
+    background-color: #08033d;
+    &__nav {
+        background-color: #090446;
+        border-radius: 0 0 50px 50px;
+        max-width: 738px;
+        margin: 0 auto;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        &-elem {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.55;
+            font-weight: 400;
+            padding: 0 7px;
+            transition: 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    &__elem {
+        display: flex;
+        flex-direction: column;
+        &:last-child {
+            align-items: flex-end;
+        }
+    }
+    &__contact {
+        padding-left: 31px;
+    }
+    &__req {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.55;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        .logo_nav {
+            width: 91px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .logo_nav-text {
+            width: 181px;
+            height: 34px;
+        }
+    }
+    &__logo-dev {
+        width: 168px;
+        height: 71px;
+    }
+    &__polit {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.55;
+        font-weight: 400;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

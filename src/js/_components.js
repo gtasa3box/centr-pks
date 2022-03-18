@@ -8,6 +8,16 @@ $('.burger').click(function(){
     $('body').toggleClass("hidden");
 });
 
+//nav-elem
+$('.nav__elem').click(function(){ 
+    $('.burger').removeClass("active");
+    $('.header__nav').removeClass("active");
+    $('.nav__content').removeClass("active");
+    $('.nav__back').removeClass("active");
+    $('.grey-back').removeClass("active");
+    $('body').removeClass("hidden");
+});
+
 //hidden-block
 $('#btn-qual').click(function(){
     $($(this).data("target")).stop().slideToggle();
@@ -36,4 +46,9 @@ const sliderLicenses = new Carousel(document.querySelector("#slider-licenses"), 
 $('.tab__title').click(function(){
     $(this).toggleClass('active');
     $($(this).data("target")).stop().slideToggle();
+});
+
+//reviews-slider
+const sliderReviews = new Carousel(document.querySelector("#slider-reviews"), {
+    Dots: false,
 });
