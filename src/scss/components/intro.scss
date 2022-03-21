@@ -39,6 +39,17 @@
         // bottom: -50px;
         z-index: -1;
         top: 60px;
+        @media (max-width:900px) {
+            width: 600px;
+            height: 600px;
+            top: 420px;
+        }
+        @media (max-width:500px) {
+            width: 300px;
+            height: 300px;
+            left: -156px;
+            top: 40px;
+        }
     }
     &__promo {
         display: block;
@@ -53,17 +64,51 @@
         // bottom: -150px;
         top: 400px;
         z-index: -1;
+        @media (max-width:900px) {
+            height: 500px;
+            width: 500px;
+            right: -10%;
+            z-index: 0;
+            top: 420px;
+        }
+        @media (max-width:780px) {
+            right: initial;
+            left: 60%;
+        }
+        @media (max-width:500px) {
+            width: 400px;
+            height: 400px;
+            left: 15%;
+            top: 500px;
+            z-index: -1;
+        }
     }
     &__content {
         padding-top: 82px;
         padding-bottom: 260px;
         position: relative;
+        @media (max-width:900px) {
+            padding-bottom: 220px;
+        }
+        @media (max-width:500px) {
+            padding-top: 40px;
+            padding-bottom: 550px;
+        }
     }
     &__text {
         color: rgb(9, 4, 70);
         font-weight: 600;
         font-size: 50px;
         line-height: 1;
+        @media (max-width:1200px) {
+            font-weight: 400;
+        }
+        @media (max-width:900px) {
+            font-size: 40px;
+        }
+        @media (max-width:500px) {
+            font-size: 22px;
+        }
         p {
             display: block;
             &:first-child {
@@ -78,6 +123,14 @@
         left: initial !important;
         top: -30px !important;
         right: 52.5% !important;
+        @media (max-width:900px) {
+            right: 33% !important;
+            top: -18px !important;
+        }
+        @media (max-width:500px) {
+            right: 31% !important;
+            top: -11px !important;
+        }
         a {
             display: block;
             background-image: url(../img/cap.svg);
@@ -88,6 +141,14 @@
             backface-visibility: hidden;
             width: 62px;
             height: 46px;
+            @media (max-width:900px) {
+                width: 44px;
+                height: 33px;
+            }
+            @media (max-width:500px) {
+                width: 27px;
+                height: 20px;
+            }
         }
     }
     &__btn {
@@ -96,6 +157,12 @@
         position: relative;
         left: -40px;
         margin-top: 20px;
+        @media (max-width:500px) {
+            width: 253px;
+            height: 98px;
+            left: -25px;
+            margin-top: 0;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -108,6 +175,9 @@
             left: -150px;
             top: -280px;
             pointer-events: none;
+            @media (max-width:900px) {
+                display: none;
+            }
         }
     }
     &__stat {
@@ -120,6 +190,15 @@
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 40px;
         padding: 30px 40px 10px;
+        @media (max-width:900px) {
+            z-index: -1;
+            border-radius: 70px 70px 0 0;
+            grid-column-gap: 0px;
+        }
+        @media (max-width:500px) {
+            border-radius: 50px 50px 0 0;
+            padding: 30px 5px 10px;
+        }
         &-elem {
             display: flex;
             flex-direction: column;
@@ -133,11 +212,25 @@
             background-repeat: no-repeat;
             width: 78px;
             height: 87px;
+            @media (max-width:900px) {
+                width: 66px;
+                height: 74px;
+            }
+            @media (max-width:500px) {
+                width: 50px;
+                height: 56px;
+            }
         }
         &-num {
             font-size: 60px;
             line-height: 1.55;
             font-weight: 700;
+            @media (max-width:900px) {
+                font-size: 45px;
+            }
+            @media (max-width:500px) {
+                font-size: 35px;
+            }
         }
         &-text {
             max-width: 154px;
@@ -146,6 +239,14 @@
             font-size: 16px;
             line-height: 1.2;
             font-weight: 400;
+            @media (max-width:900px) {
+                font-size: 14px;
+                max-width: 150px;
+            }
+            @media (max-width:500px) {
+                font-size: 12px;
+                max-width: 120px;
+            }
         }
     }
 }
