@@ -15,6 +15,10 @@
         border-style: solid;
         width: 296px;
         height: 47px;
+        background-color: white;
+        @media (max-width:1200px) {
+            width: 217px;
+        }
         &:hover {
             background-color: #090446;
             color: white;
