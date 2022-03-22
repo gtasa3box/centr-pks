@@ -8,15 +8,35 @@
     --carousel-button-svg-stroke-width: 2;
     --carousel-button-width: 45px;
     --carousel-button-height: 45px;
+    @media (max-width:900px) {
+        width: 330px;
+    }
+    @media (max-width:500px) {
+        width: 200px;
+    }
     .carousel__button.is-next {
         right: -60px;
+        @media (max-width:500px) {
+            right: -40px;
+        }
     }
     .carousel__button.is-prev {
         left: -60px;
+        @media (max-width:500px) {
+            left: -40px;
+        }
     }
     .carousel__button {
+        @media (max-width:500px) {
+            width: 30px;
+            height: 30px;
+        }
         svg {
             transition: 0.3s ease;
+            @media (max-width:500px) {
+                stroke-width: 1;
+                width: 20px;
+            }
         }
         &:hover {
             svg {
@@ -30,6 +50,12 @@
         padding: 0;
         display: flex;
         justify-content: center;
+        @media (max-width:900px) {
+            height: 470px;
+        }
+        @media (max-width:500px) {
+            height: 285px;
+        }
         a {
             display: block;
             background-size: contain;

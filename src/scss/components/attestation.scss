@@ -1,15 +1,29 @@
 .attestation {
     padding-bottom: 150px;
+    @media (max-width:500px) {
+        padding-bottom: 100px;
+    }
     &__content {
 
     }
     &__tabs {
         margin-top: 60px;
         margin-bottom: 150px;
+        @media (max-width:500px) {
+            margin-bottom: 50px;
+        }
     }
     &__btn {
         width: 452px;
         height: 154px;
         margin: 0 auto;
+        @media (max-width:900px) {
+            width: 382px;
+            height: 130px;
+        }
+        @media (max-width:500px) {
+            width: 300px;
+            height: 102px;
+        }
     }
 }
