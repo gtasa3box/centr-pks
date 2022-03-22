@@ -5,6 +5,9 @@
     max-width: 560px;
     width: 560px;
     display: none;
+    @media (max-width:500px) {
+        max-width: 100vw;
+    }
     &__back {
         display: block;
         background-image: url(../img/popup-form/back.svg);
@@ -27,6 +30,9 @@
         font-weight: 400;
         font-size: 16px;
         width: 100%;
+        @media (max-width:500px) {
+            padding: 20px;
+        }
         input {
             color: #000000;
             border: 1px solid #c9c9c9;
@@ -43,6 +49,9 @@
             line-height: 1.33;
             width: 100%;
             padding: 0 20px;
+            @media (max-width:500px) {
+                height: 40px;
+            }
         }
         .iti {
             margin-bottom: 20px;
