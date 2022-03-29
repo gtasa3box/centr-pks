@@ -168,4 +168,65 @@
             font-size: 18px;
         }
     }
+
+    //text
+    &_text {
+        position: relative;
+        z-index: 2;
+        .title {
+            &:before {
+                @media (max-width:500px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__text {
+        padding: 50px 0;
+        color: #ffffff;
+        font-size: 24px;
+        font-family: 'Gilroy',Arial,sans-serif;
+        line-height: 1.2;
+        font-weight: 500;
+        position: relative;
+        z-index: 2;
+        @media (max-width:900px) {
+            font-size: 18px;
+        }
+        @media (max-width:500px) {
+            font-size: 14px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/qualification/arrow.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: -100px;
+            top: -70px;
+            width: 75px;
+            height: 160px;
+        }
+        &_not-before {
+            padding: 0;
+            line-height: 1.55;
+            &:before {
+                content: none;
+            }
+        }
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        ol {
+            list-style: decimal;
+            padding-left: 25px;
+        }
+        strong {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    }
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+<!--metatextblock-->
+<title>Курсы повышения квалификации на сайте Центр ПКС от 3 до 7 дней</title>
+<meta name="description" content="Курсы повышения квалификации дистанционно для сотрудников без отрыва от работы в нашем образовательном центре. Получите аттестацию на курсах повышения квалификации от компании Центр ПКС." />
+<meta name="keywords" content="курсы повышения квалификации, сотрудники, образовательном, центре" />
+<meta property="og:url" content="https://centr-pks.ru" />
+<meta property="og:title" content="Повышение квалификации - получите удостоверение Дистанционно от 3 до 7" />
+<meta property="og:description" content="Повысьте квалификацию и получите удостоверение Дистанционно от 3 до 7 дней без отрыва от производства" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="img/popup-form/back.svg" />
+<link rel="canonical" href="https://centr-pks.ru">
+<!--/metatextblock-->
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/intro.html')
+
+      @include('partials/podemnye-sooruzheniya/qualification.html')
+      @include('partials/backcall.html')
+      @include('partials/podemnye-sooruzheniya/qualification-text.html')
+      
+    </main>
+    @include('partials/footer.html')
+    @include('partials/popups.html')
+  </div>
+  @include('partials/foot-scripts.html')
+</body>
+
+</html>
